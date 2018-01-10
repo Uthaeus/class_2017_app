@@ -5,7 +5,7 @@ class CategoriesController < ApplicationController
   end
 
   def create
-    @category = Category.new(params.require(:category).permit(:category_id))
+    @category = Category.new(params.require(:category).permit(:name))
 
     respond_to do |format|
       if @category.save

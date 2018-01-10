@@ -1,5 +1,6 @@
 class Restaurant < ApplicationRecord
   belongs_to :user
+  belongs_to :categories
 
   # def self.search(search)
   #   if search
